@@ -13,6 +13,7 @@ client.login(config.user).then(() => {
 });
 
 function handleNotification(msg) {
+    msg.arriveTime = Date.now();
     console.log(JSON.stringify(msg) + ",");
 }
 
